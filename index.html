@@ -174,8 +174,20 @@
   
 
 
+<!-- image changer -->
+    <div>
+          <div id="second">
+            <img
+            src="images/pic1.jpg"
+            alt="Image"
+            class="full-width-image"
+            id="rotating-image"
+        />
+          </div>
 
-
+          <button class="previous-button" id='button' onclick="goToPrevious()">Previous</button>
+      <button class="next-button" id='button' onclick="goToNext()">Next</button>
+  </div>
 
 
 
@@ -255,7 +267,47 @@
             isMenuOpen = false;
         };
         
-        
+        const imageUrls = [
+    'images/pic1.jpg',
+    'images/pic2.webp',
+    'images/pic3.webp',
+    'images/pic4.jpg',
+    'images/pic5.jpg',
+    'images/pic6.jpg',
+    'images/pic7.jpg',
+    'images/pic8.jpg',
+    'images/pic9.png',
+    'images/pic10.jpg',
+    'images/pic11.jpg',
+    'images/pic12.jpg',
+    'images/pic13.jpg',
+    'images/pic14.jpg',
+];
+
+let currentIndex = 0;
+
+function updateImage() {
+    const rotatingImage = document.getElementById('rotating-image');
+    rotatingImage.src = imageUrls[currentIndex];
+}
+
+function goToPrevious() {
+    currentIndex = currentIndex === 0 ? imageUrls.length - 1 : currentIndex - 1;
+    updateImage();
+}
+
+function goToNext() {
+    currentIndex = (currentIndex + 1) % imageUrls.length;
+    updateImage();
+}
+
+// Automatically rotate images every 3 seconds
+setInterval(goToNext, 3000);
+
+// Initial image update
+updateImage();
+
+
         
          
        

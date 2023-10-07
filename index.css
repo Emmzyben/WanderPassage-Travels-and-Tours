@@ -119,7 +119,7 @@ ul li{
 
 .full-width-image {
   width: 100%;
-  height: 350px;
+  height: 450px;
 }
 
 #full {
@@ -130,14 +130,9 @@ ul li{
 #full> div {
 background-image: url(images/pic10.jpg);
 }
-#first{
-  width: 25%;
-}
+
 #second{
-  width: 50%;
-}
-#third{
-  width: 25%;
+  width: 100%;
 }
 #cover{
   background-color: #2a013457;
