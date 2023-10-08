@@ -371,7 +371,7 @@ border-bottom: 1px solid wheat;
   font-size: 30px;
   font-weight: bolder;
   color: white;
-  background-color: #001f3fa5;
+  background-color: #001f3f61;
   height: 455px;
   width: 100%;
   padding-left: 7%;
@@ -410,23 +410,15 @@ margin-right: 40px;
   font-size: larger;
   font-weight: bolder;
   padding: 20px;
-  color: white;
-  background-color: #001f3f;
+  color: rgb(0, 0, 0);
+  background-color:whitesmoke;
  }
  .services > div{
-  width: 24%;
-  text-align: center;
- }
- .services1{
-  display: flex;flex-direction: row;flex-wrap: wrap;align-items: center;justify-content: space-around;
-  font-size: larger;
-  font-weight: bolder;
-  padding: 20px;
-  color: white;
-  background-color: #001f3f;
- }
- .services1 > div{
-  width: 24%;
+width: 30%;
   text-align: center;
   border: 1px solid white;
+  margin: 20px;
+ }
+ .services >div> img{
+width:100%;
  }
