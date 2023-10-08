@@ -29,7 +29,6 @@
 }
 
 #dropdown a {
-  border-bottom: 1px solid rgb(255, 255, 255);
   list-style-type: none;
 }
 
@@ -53,13 +52,12 @@
    </style>
 </head>
 <body>
-    <header class="text-gray-600 body-font w-full z-50">
+    <header class="text-gray-600 body-font w-full z-50" id="head">
         <div class="title-font font-medium text-gray-900" id="custom-container" style="height: 90px;">
           <div style="text-align: left;">
-            <img src="images/Logo.jpeg" width="120px" style="margin-left: 4%;" />
-            <!-- <h1 class="text-[#001f3f] cursor-pointer" style="font-size: 17px; padding-left: 20px;">WanderPassage Travels</h1>
-            <p class="text-[grey] cursor-pointer" style="font-size: 14px; padding-left: 20px;"> <i>Travel Beyond, Discover Within</i></p>
-          <br> -->
+            <img src="images/Logo.jpeg" width="90px" style="margin-left: 4%;" />
+            <p class="text-[#001f3f] cursor-pointer" style="font-size: 14px; padding-left: 20px;"> <i>Travel Beyond, Discover Within</i></p>
+          <br> 
           </div>
       
           <div id="upul">
@@ -78,7 +76,7 @@
         </div>
       
         <div>
-          <ul id="ul">
+          <ul id="ul" >
             <li><a class="hover:text-[#fe5000] cursor-pointer text-[#001f3f]" href="index.html">Home</a></li>
             <li><a class="hover:text-[#fe5000] cursor-pointer text-[#001f3f]" href="about.html">Application Form</a></li>
             <li class="dropdown-item">
@@ -175,35 +173,123 @@
 
 
 <!-- image changer -->
-    <div>
-          <div id="second">
+    <div >
+          <div id="second" >
             <img
             src="images/pic1.jpg"
             alt="Image"
             class="full-width-image"
             id="rotating-image"
         />
-          </div>
-
-          <button class="previous-button" id='button' onclick="goToPrevious()">Previous</button>
-      <button class="next-button" id='button' onclick="goToNext()">Next</button>
+          </div>    
   </div>
-
-
-
-
-<div style="height: 350px; text-align: center;padding-top: 40px;">
-    App under development .....
+<div id="moveup">
+  <div style="border: 2px solid #ffd90052;width: fit-content;padding: 10px;border-radius: 5px;">
+<h1>Welcome to WanderPassage Travels </h1>
+<p>Travel Beyond, Discover Within.</p>
+<p> Your Journey Awaits!</p>
+<button class="previous-button" id='button' onclick="goToPrevious()"><</button>
+<button class="next-button" id='button' onclick="goToNext()">></button>
+</div>
 </div>
 
 
+<!-- content -->
+
+<div id="content">
+<div style="width: 40%;">
+  <img src="images/welcome.png" alt="welcome" >
+</div>
+
+<div style="width: 60%;">
+  
+  <h1 style="color: #C42247;font-size: larger;font-weight: bolder;">Welcome to WanderPassage Travels - Your Journey Awaits!</h1><br>
+
+  <p>At WanderPassage Travels, we believe in turning dreams into reality. </p>
+  
+ <p>Whether you're a student looking to study abroad, an aspiring professional seeking work opportunities overseas, a traveler with the desire to explore new horizons, or a business visionary in pursuit of global ventures,<br> we've got your passport to the world. 
+</p>   
+ </div> 
+</div>
+
+<div style="background-image: url(images/pic12.jpg);background-size: 100%;">
+
+<div id="content1" style="background-color:#001f3fd3;">
+ <div style="width: 50%; padding: 20px;border-radius: 8px;margin-right: 30px;">
+  <h1 style="color: #e6ce77;font-size: larger;font-weight: bolder;">We are always at your service</h1>
+  <p>Our dedicated team is here to make your travel aspirations come true. We specialize in student visas, work visas, visit visas, business visas, and seamless flight bookings. 
+</p>  
+ 
+<p>With WanderPassage Travels, you're not just booking a trip; you're embarking on a life-changing adventure.
+</p>
+</div>
+
+<div style="width: 40%;">
+<img src="images/serve.png" alt="serve" width="300px">
+</div>
+</div>
 
 
+<div id="content1" style="background-color: #001f3fd3;">
+  <div style="width: 40%;padding: 40px;">
+  <img src="images/shake.png" alt="shake" width="400px">
+  </div>
+  <div style="width: 60%; padding: 20px;border-radius: 8px;margin-right: 30px; ">
+    <h1 style="color: #e6ce77;font-size: larger;font-weight: bolder;">We have got you covered</h1>
+    <p>Let us be your trusted travel companion, guiding you <br> through the exciting journey ahead.</p>  
+  
+ <p>Explore our services, and let your wanderlust flourish. </p>  
+  
+ <p> Your journey begins here, with WanderPassage Travels.</p>
+</div>
+</div>
+
+</div>
+
+<div style="border: 1px solid rgba(255, 255, 255, 0.176);">
+<div class="services">
+  <div>
+    <h1 style="border: 3px solid rgb(255, 255, 255);border-radius: 50%;padding: 10px;">What We Do</h1>
+  </div>
+  <div>
+    <img src="images/mcis-visa.jpg" alt="mcis-visa">
+    <h1>Imigration visa/Work placement</h1>
+  </div>
+  <div>
+    <img src="images/admissions.jpg" alt="admissions">
+    <h1>Admission Processing</h1>
+  </div>
+  <div>
+    <img src="images/guidance.jpg" alt="guidance">
+    <h1>Visa Guidance/Counseling</h1>
+  </div>
+</div>
+</div>
 
 
+<div>
+  <img src="images/map.jpg" alt="map">
+</div>
 
+<div class="services1">
+  <div>
+    <h1>CONTACT US</h1>
+<img src="images/contact.jpg" alt="contact" width="200px">
+  </div>
+  <div>
+    <h1>TESTIMONIALS</h1>
+<img src="images/testimonial.jpg" alt="testimonial">
+  </div>
+  <div>
+    <h1>CERTIFIED</h1>
+<img src="images/approved-img.jpg" alt="approved-img" width="250px">
+  </div>
 
-
+  <div>
+<h1>MAKE PAYMENTS EASILY</h1>
+<img src="images/payment.webp" alt="payment" width="100%">
+  </div>
+</div>
 
 
 
