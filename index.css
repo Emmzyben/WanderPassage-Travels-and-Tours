@@ -19,12 +19,12 @@
     padding: 7px;
 }
 #ul{
-  background-color: whitesmoke;
+  background-color: rgb(255, 255, 255);
    text-align: center;padding: 5px;
 }
 
 #custom-container {
-  background-color: whitesmoke;
+  background-color: rgb(255, 255, 255);
     border-radius: 2px;
   }
   #upul{
@@ -35,23 +35,25 @@ font-size: small;
   }
 
 #navs{
-  background-color: #FFD500;
+  background-color: #FFFFFF;
   z-index: 1000;
   text-align: center;
   color: #003F88;
   padding-top: 30px;
   padding-bottom: 50px;
 }
+#navbars{
+  background-color: #001f3f;
+  color: white;
+}
 footer{
     background-color: #01172c;
 }
 #hover{
   margin-right: 30px;
+  padding: 10px;
 }
   #hover:hover{
-border: 1px solid white;
-padding: 5px;
-font-size: 15px;
 border-radius: 8px;
 background-color: #FFD700;
 color: #001f3f;
@@ -61,7 +63,10 @@ color: #001f3f;
     #header {
       display: block;
   }
-
+  #navbars{
+    background-color: #001f3f;
+    display: none;
+  }
 
     #custom-container {
         display: none;
@@ -132,6 +137,7 @@ background-image: url(images/pic10.jpg);
 #second{
  margin-left: 7%;
  margin-right: 7%;
+ margin-top: 2%;
 }
 #cover{
   background-color: #2a013457;
@@ -402,7 +408,7 @@ margin-right: 40px;
  padding: 20px;text-align: center;
  font-size: 17px;
  font-weight: bold;
- padding-top: 100px;
+ padding-top: 50px;
  color:#fdc600d4 ;
  text-align: left;
  }
@@ -417,7 +423,7 @@ margin-right: 40px;
  padding: 20px;text-align: center;
  font-size: 17px;
  font-weight: bold;
- padding-top: 100px;
+ padding-top: 50px;
  color:#fdc600d4 ;
  text-align: left;
  margin-left: 5%;
@@ -436,13 +442,13 @@ margin-right: 40px;
 width: 25%;
   text-align: center;
   margin: 20px;
-  color: #ffc800;
+  color: #ffffff;
 
  
  }
  .services >div> img{
 width:100%;
-border-radius: 20px;
+border-radius: 10px;
  }
 
 
@@ -461,4 +467,13 @@ border-radius: 20px;
   border-bottom-left-radius: 20px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+ }
+ #round{
+  border-radius: 100%;
+  border: 1px solid white;
+  font-size:14px;
+  padding: 40px;
+  background-color: #D1DBE5;
+  color: rgb(0, 0, 0);
+  font-weight: lighter;
  }
