@@ -49,6 +49,29 @@
   display: block;
 }
 
+#input{
+  border: 1px solid #001f3f;
+  padding: 5px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  width: 100%;
+}
+#select{
+  border: 1px solid #001f3f;
+  padding: 5px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  width: 100%;
+}
+#submit{
+  width: 100px;
+  color: #001f3f;
+  background-color: #FFD700;
+  padding: 10px;
+  border-radius: 10px;
+  border: 0px solid #001f3f;
+}
+
    </style>
 </head>
 <body>
@@ -152,69 +175,64 @@
             </ul>
           </div>
        
-          <a class="mr-5 cursor-pointer" id="hover" href="visa.html">Visa Councelling</a>
+          <a class="mr-5 cursor-pointer" id="hover" href="gallery.php">Visa Councelling</a>
         <a class="mr-5 cursor-pointer" id="hover" href="gallery.php">Flight ticket</a>
         <a href="contact.html">
           <button class="mr-5 cursor-pointer" id="hover">Contact us</button>
         </a></div>
 
-<div style="height: 400px;background-image: url(/images/pic12.jpg);background-repeat: no-repeat;background-size: cover;background-position: center;" >
+<div style="height: 400px;background-image: url(/images/visa.jpg);background-repeat: no-repeat;background-size: cover;background-position: center;" >
    <div style="background-color: #001f3f56;height: 400px;">
 <h1 style="font-size: 50px;color: white;font-weight:bold;padding-left: 8%;
-position: absolute;top: 80%;">About Us</h1>
+position: absolute;top: 80%;">Visa Councelling</h1>
 </div>
 </div>
    
 
 <div id="aboutz">
-<div id="pad">
-   <h2>Overview</h2>
- <p>  WanderPassage Travels is a dynamic and forward-thinking travel company dedicated to providing a wide range of travel services to our valued clients.
-</p>
+<div id="pad" style="width: 60%;">
+   <h2>Fill in the form to apply</h2>
+<form action="">
+<label for="">Full Name</label><br>
+<input type="text" name="name" id="input"><br>
 
-<h1>Our Mission:</h1>
-<p>Our mission is to simplify the travel experience, making it accessible, affordable, and hassle-free for all.
-</p>
+<label for="">Phone Number</label><br>
+<input type="number" name="number" id="input"><br>
 
-<h1>Our Services:</h1>
-<p>We specialize in a diverse array of services, including student visas, work visas, tourism and business visas, and both international and local flight bookings.
-</p>
+<label for="">Email</label><br>
+<input type="email" name="email" id="input"><br>
 
-<h1>Experienced Team:</h1>
-<p>Our team of experienced professionals is committed to delivering top-notch service and expert guidance to ensure your travel plans are executed with precision.
-</p>
+<label for="">Upload Offer</label><br>
+<input type="file" name="file1" id="input"><br>
 
-<h1>Client-Centric Approach:</h1>
-<p>At WanderPassage Travels, we place our clients at the heart of everything we do. Your satisfaction is our ultimate goal.
-</p>
+<label for="">Upload passport data page</label><br>
+<input type="file" name="file2" id="input"><br>
 
-<h1>Global Reach:</h1>
-<p>With a global network of partners and associates, we have the capability to assist you in your travel endeavors worldwide.
-</p>
+<label for="">Upload Other Supporting document</label><br>
+<input type="file" name="file3" id="input"><br>
 
-<h1>Quality Assurance:</h1>
-<p>We take pride in our dedication to quality assurance, ensuring that every aspect of your journey is meticulously planned and executed.
-</p>
+<label for="">Country of Destination</label><br>
+<select name="Country" id="select">
+<option value="">United kingdom</option>
+<option value="">USA</option>
+<option value="">Canada</option>
+<option value="">Australia</option>
+<option value="">Ireland</option>
+<option value="">New zealand</option>
+<option value="">Malaysia</option>
+<option value="">Russia</option>
+<option value="">Other</option>
+</select> <br>
+<input type="submit" name="" id="submit">
 
-<h1>Why Choose Us:</h1>
-<p>WanderPassage Travels is your trusted partner in the world of travel, offering reliability, affordability, and personalized service that sets us apart from the rest.
-</p>
-
-<h1>Community Engagement:</h1>
-<p>We're not just a travel company; we're an active part of the communities we serve, contributing to social and environmental causes.
-</p>
-
-<h1>Contact Us:</h1>
-<p>We're here to help you embark on your next adventure. Contact us today to discover how we can make your travel dreams a reality.
-</p>
-
+</form>
 </div>  
 
-<div style="display: flex;flex-direction: column;">
+<div style="display: flex;flex-direction: column;width: 40%;" >
     <img src="images/pic1.jpeg" alt="pic11"><br>
     <img src="images/pic25.jpeg" alt="pic11"><br>
     <img src="images/pic3.jpeg" alt="pic11"><br>
-    <img src="images/pic2.jpeg" alt="pic1">
+
 </div>
 </div>
 

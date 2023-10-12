@@ -520,6 +520,7 @@ width: 100%;
 }
 #aboutz > div{
   margin-right: 20px;
+  padding: 20px;
 }
 #aboutz >div>img{
   width: 100%;
@@ -542,3 +543,25 @@ width: 100%;
 #pad{
   margin-left: 7%;
 }
+input{
+  border: 1px solid #001f3f;
+  padding: 5px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  width: 100%;
+}
+select{
+  border: 1px solid #001f3f;
+  padding: 5px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  width: 100%;
+}
+#submit{
+  width: 100px;
+  color: #001f3f;
+  background-color: #FFD700;
+  border-radius: 10px;
+  border: 0px solid #001f3f;
+}
+
