@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/Logo.jpeg">
-    <title>Services</title>
+    <title>Booking</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="index.css">
    <style>
@@ -50,11 +50,12 @@
 }
 
 #input{
-  border: 1px solid #001f3f;
+  border: 1px solid #ffffff;
   padding: 5px;
   margin-bottom: 20px;
   margin-top: 5px;
   width: 100%;
+  color: black;
 }
 #select{
   border: 1px solid #001f3f;
@@ -62,9 +63,10 @@
   margin-bottom: 20px;
   margin-top: 5px;
   width: 100%;
+  background-color: #001f3f;
 }
 #submit{
-  width: 100px;
+  width: auto;
   color: #001f3f;
   background-color: #FFD700;
   padding: 10px;
@@ -114,14 +116,14 @@
             </li>
             <li class="dropdown-item">
                 Institutions
-                <ul class="sub-menu">
-                 <li> <a href="scafolding.html">Australia</a></li>  
-                 <li><a href="training.html">Canada</a></li>   
-                 <li><a href="safehouse.html">Uk & Europe</a></li>   
-                  <li><a href="maintanance.html">South America</a></li>  
-                  <li><a href="renting.html">United States of America</a></li>  
-                <li><a href="renting.html">United Arab Emirates</a></li>    
-                </ul>
+                <ul id="dropdown">
+                    <a href="Australia.html">Australia</a>
+                    <a href="Canada.html">Canada</a>
+                    <a href="Europe.html">Uk & Europe</a>
+                    <a href="SouthAmerica.html">South America</a>
+                    <a href="Usa.html">United States of America</a>
+                    <a href="uae.html">United Arab Emirates</a>
+                  </ul>
               </li>
               <li class="dropdown-item">
                 Portal Login
@@ -168,12 +170,12 @@
         <div class="nav-container">
             <a class="mr-5 cursor-pointer" id="hoverer" onmouseenter="openDropdown()" onmouseleave="closeDropdown()">Institutions</a>
             <ul id="dropdown">
-              <a href="Australia.html">Australia</a>
-              <a href="Canada.html">Canada</a>
-              <a href="Europe.html">Uk & Europe</a>
-              <a href="SouthAmerica.html">South America</a>
-              <a href="Usa.html">United States of America</a>
-              <a href="uae.html">United Arab Emirates</a>
+              <a href="scafolding.html">Australia</a>
+              <a href="training.html">Canada</a>
+              <a href="safehouse.html">Uk & Europe</a>
+              <a href="maintanance.html">South America</a>
+              <a href="renting.html">United States of America</a>
+              <a href="renting.html">United Arab Emirates</a>
             </ul>
           </div>
        
@@ -183,10 +185,10 @@
           <button class="mr-5 cursor-pointer" id="hover">Contact us</button>
         </a></div>
 
-<div style="height: 400px;background-image: url(/images/students.jpg);background-repeat: no-repeat;background-size: cover;background-position: center;" >
+<div style="height: 400px;background-image: url(/images/pic4.jpeg);background-repeat: no-repeat;background-size: cover;background-position: center;" >
    <div style="background-color: #001f3f56;height: 400px;">
 <h1 style="font-size: 50px;color: white;font-weight:bold;padding-left: 8%;
-position: absolute;top: 80%;">Our Services</h1>
+position: absolute;top: 80%;">Book a flight</h1>
 </div>
 </div>
 
@@ -194,54 +196,31 @@ position: absolute;top: 80%;">Our Services</h1>
 <div  style="background-image: url(images/students.png);background-size: cover;background-position: center;">
 <div id="aboutz"  style="background-color:#001f3fcc;color: white;;">
     <div id="pad" style="width: 60%;">
-  <h1> Visa Services: </h1>
-  <p>We offer comprehensive visa services, catering to students, professionals, tourists, and business travelers. Our expert team navigates the complexities of visa applications to ensure a seamless process.</p> 
+        <h2>Flight booking</h2>
+        <form action="">
+        <label for="">Full Name</label><br>
+        <input type="text" name="name" id="input"><br>
+        
+        <label for="">Phone Number</label><br>
+        <input type="number" name="number" id="input"><br>
+        
+        <label for="">Email</label><br>
+        <input type="email" name="email" id="input"><br>
+        
+        <label for="">Departure date</label><br>
+        <input type="date" name="Departure" id="input"><br>
+        
+        <label for="">Return Date</label><br>
+        <input type="date" name="Return" id="input"><br>
 
-<h1> Flight Booking:</h1>
-   Whether you're planning an international journey or a local getaway, our flight booking services are designed to find you the best deals, schedules, and routes that match your preferences.
-
-<h1>Student Visas:</h1>
-  <p></p> For students aspiring to study abroad, WanderPassage Travels provides specialized assistance in securing student visas, making your educational dreams a reality.
-
- <h1>Work Visas:</h1>
- <p>We help professionals and job seekers obtain the necessary work visas, streamlining the process so you can focus on your career prospects.
-</p>  
-<h1>Tourism Visas:</h1>
- <p>Explore the world with ease through our tourism visa services. We simplify the visa application process, allowing you to focus on your travel itinerary.
-</p> 
-
-<h1>Business Visas:</h1>
- <p> Our expertise in business visas ensures that corporate travelers can conduct international business seamlessly and efficiently.
-</p> 
-
-<h1>Customized Travel Packages:</h1>
- <p>We create tailored travel packages that cater to your unique preferences and budget, delivering a personalized travel experience.
-</p> 
- 
-<h1>24/7 Customer Support:</h1>
- <p>Our dedicated customer support team is available around the clock to assist you with any travel-related queries or issues, providing peace of mind during your journey.
-</p>  
-
-<h1>Global Partnerships:</h1>
- <p> Through our extensive network of global partnerships, we can offer exclusive benefits and services that enhance your travel experience.
-</p> 
-
-<h1>Travel Insurance:</h1>
- <p> Ensure your travel is worry-free with our travel insurance options.</p>  
-
-<h1>Visa Counselling</h1>
-
-  <p>We also provide visa Counselling as one of our cardinal services.</p> 
+        <input type="submit" name="" id="submit" value="Submit your booking" >
+        
+        </form>
 </div>
 
 
 
-<div style="display: flex;flex-direction: column;width: 40%;" >
-    <img src="images/pic1.jpeg" alt="pic11"><br>
-    <img src="images/pic25.jpeg" alt="pic11"><br>
-    <img src="images/pic3.jpeg" alt="pic11"><br>
 
-</div>
 
 
 </div>
