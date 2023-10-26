@@ -11,7 +11,9 @@
 .nav-container {
   position: relative;
   display: inline-block;
+  padding-right: 30px;
 }
+
 
 #dropdown {
   display: none;
@@ -52,18 +54,21 @@
    </style>
 </head>
 <body>
+  <div id="firstUp">
+    <div><p>+2348062403898  <span id="sp"> info@wanderpassagetravels.com </span></p></div>
+    <div style="text-align: right;"><a href="applicaton.html">| Application form-apply@wanderpassagetravels.com |</a></div>
+  </div>
     <header class="text-gray-600 body-font w-full z-50" id="head">
         <div class="title-font font-medium text-gray-900" id="custom-container" style="height: 90px;">
+         <div id="custom-container2">
           <div style="text-align: left;">
             <img src="images/Logo.jpeg" width="90px" style="margin-left: 4%;" />
-            <p class="text-[#001f3f] cursor-pointer" style="font-size: 14px; padding-left: 20px;"> <i>Travel Beyond, Discover Within</i></p>
+            <p class="text-[#001f3f] cursor-pointer" style="font-size: 14px; padding-left: 20px;"> <i><b>Travel Beyond, Discover Within</b></i></p>
           <br> 
           </div>
-      
+      </div>
            <div id="upul">
-            <p class="text-gray-900 font-bold cursor-pointer">Email:info@wanderpassagetravels.com</p>
-            <p class="text-gray-900 font-bold cursor-pointer">Tel1: +234 (0) 800-000-0000<br/> Tel2: +234 (0) 700-000-0000</p>
-          </div>
+           </div>
         </div>
       
         <div id="header" >
@@ -136,9 +141,14 @@
        
        
          
-        <a class="mr-5 cursor-pointer" id="hover" href="about.html">About us</a>
-        <a class="mr-5 cursor-pointer" id="hover" href="services.html">Services</a>
-       
+        <div class="nav-container">
+          <a class="mr-5 cursor-pointer" id="hoverer" onmouseenter="openDropdown()" onmouseleave="closeDropdown()">About Us</a>
+          <ul id="dropdown">
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="offices.html">Offices</a>
+          </ul>
+        </div>
        
         <div class="nav-container">
             <a class="mr-5 cursor-pointer" id="hoverer" onmouseenter="openDropdown()" onmouseleave="closeDropdown()">Institutions</a>
@@ -152,7 +162,7 @@
             </ul>
           </div>
        
-          <a class="mr-5 cursor-pointer" id="hover" href="visa.html">Visa Councelling</a>
+          <a class="mr-5 cursor-pointer" id="hover" href="visa.html">Visa Counselling</a>
         <a class="mr-5 cursor-pointer" id="hover" href="flight-ticket.html">Flight ticket</a>
         <a href="contact.html" >
           <button class="mr-5 cursor-pointer" id="hover1">Contact us</button>
@@ -236,27 +246,31 @@
 
 
 <div style="margin-top: 5%;background-image: url(images/pic12.jpg);background-repeat: no-repeat;background-size: cover;">
- <div style="background-color: #001f3fec;">
+ <div style="background-color: #001f3fd8;">
   <h1 style="font-size: 50px;font-weight: 900;text-align: center;color: white;">WHAT WE DO</h1>
 <div class="services">
-  <div>
-    <img src="images/pic24.jpeg" alt="mcis-visa">
-    <h1>Abroad Studies/Student Visa</h1>
-  </div>
-  <div>
+  <div style=" height: 250px;">
     <img src="images/pic22.jpeg" alt="admissions">
-    <h1>Immigration/work visa</h1>
+    <h1>Immigration visa/work placement</h1>
   </div>
-  <div>
+  <div style=" height: 250px;">
+    <img src="images/admissions.jpg" alt="mcis-visa">
+    <h1>Admission processing</h1>
+  </div>
+  <div style=" height: 250px;">
     <img src="images/pic4.jpeg" alt="guidance">
-    <h1>Flight Booking (Both International And Local Flights).</h1>
+    <h1>Flight Booking</h1>
+    <p>International flight/Domestic flight</p>
   </div>
-  
-  <div id="round">
-    <p>At Wander Passage Travels, Admissions processing is always an easy task to offer such as assisting students on ...</p>
+  <div style=" height: 250px;">
+    <img src="images/visa.jpg" alt="guidance">
+    <h1>Visa guidance/counselling</h1>
   </div>
   <div id="round">
-    <p>At Wander Passage Travels, Admissions processing is always an easy task to offer such as assisting students on ...</p>
+    <p>At WanderPassage Travels, Admissions processing is always an easy task to offer such as assisting students on .</p>
+  </div>
+  <div id="round">
+    <p>At WanderPassage Travels, Admissions processing is always an easy task to offer such as assisting students on .</p>
   
   </div>
 
@@ -281,19 +295,18 @@
         <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
           <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
            <img src="images/Logo.jpeg" alt="logo" width="60px">
-            <span class="ml-3 text-xl text-[#ffffff]">WanderPassage Travels and Tours</span> 
+            <span class="ml-3 text-xl text-[#ffffff]">WanderPassage Travels</span> 
           </a>
           <p class="text-sm text-[#ffffff] sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
             Copyright © 2023. All Rights Reserved 
-            <span style="border-right: 2px solid white; height: 70px;margin-right: 10px;"></span>
-            <a class="text-#ffffff ml-1" rel="noopener noreferrer" target="_blank"></a> 
-            Developed by Inspired-dev tech solutions
+          
+            
           </p>
           
         </div>
       </footer>
 
-      <div style="position: fixed;top: 40%;left:5%;">
+      <div style="position: fixed;top: 40%;left:1%;">
         <span class=" sm:ml-auto sm:mt-0 mt-4 ">
           <a class="text-gray-500" href="https://www.facebook.com/profile.php?id=61552195325006">
             <svg fill="blue" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">

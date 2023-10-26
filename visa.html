@@ -11,7 +11,9 @@
 .nav-container {
   position: relative;
   display: inline-block;
+  padding-right: 30px;
 }
+
 
 #dropdown {
   display: none;
@@ -75,17 +77,21 @@
    </style>
 </head>
 <body>
+  <div id="firstUp">
+    <div><p>+2348062403898  <span id="sp"> info@wanderpassagetravels.com </span></p></div>
+    <div style="text-align: right;"><a href="applicaton.html">| Application form-apply@wanderpassagetravels.com |</a></div>
+  </div>
     <header class="text-gray-600 body-font w-full z-50" id="head">
         <div class="title-font font-medium text-gray-900" id="custom-container" style="height: 90px;">
+          <div id="custom-container2">
           <div style="text-align: left;">
             <img src="images/Logo.jpeg" width="90px" style="margin-left: 4%;" />
-            <p class="text-[#001f3f] cursor-pointer" style="font-size: 14px; padding-left: 20px;"> <i>Travel Beyond, Discover Within</i></p>
+            <p class="text-[#001f3f] cursor-pointer" style="font-size: 14px; padding-left: 20px;"> <i><b>Travel Beyond, Discover Within</b></i></p>
           <br> 
           </div>
+      </div>
       
-           <div id="upul">
-            <p class="text-gray-900 font-bold cursor-pointer">Email:info@wanderpassagetravels.com</p>
-            <p class="text-gray-900 font-bold cursor-pointer">Tel1: +234 (0) 800-000-0000<br/> Tel2: +234 (0) 700-000-0000</p>
+            <div id="upul">
           </div>
         </div>
       
@@ -155,13 +161,19 @@
       <!-- nav -->
 
     
-      <div id="navbars"> 
-        <a class="mr-5 cursor-pointer" id="hover" href="index.html">Home</a>
+     <div id="navbars"> <a class="mr-5 cursor-pointer" id="hover" href="index.html">Home</a>
         <a class="mr-5 cursor-pointer" id="hover" href="applicaton.html">Application Form</a>
        
        
-        <a class="mr-5 cursor-pointer" id="hover" href="about.html">About us</a>
-        <a class="mr-5 cursor-pointer" id="hover" href="services.html">Services</a>
+         
+        <div class="nav-container">
+          <a class="mr-5 cursor-pointer" id="hoverer" onmouseenter="openDropdown()" onmouseleave="closeDropdown()">About Us</a>
+          <ul id="dropdown">
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="offices.html">Offices</a>
+          </ul>
+        </div>
        
         <div class="nav-container">
             <a class="mr-5 cursor-pointer" id="hoverer" onmouseenter="openDropdown()" onmouseleave="closeDropdown()">Institutions</a>
@@ -175,10 +187,10 @@
             </ul>
           </div>
        
-          <a class="mr-5 cursor-pointer" id="hover" href="visa.html">Visa Councelling</a>
+          <a class="mr-5 cursor-pointer" id="hover" href="visa.html">Visa Counselling</a>
         <a class="mr-5 cursor-pointer" id="hover" href="flight-ticket.html">Flight ticket</a>
-        <a href="contact.html">
-         <button class="mr-5 cursor-pointer" id="hover1">Contact us</button>
+        <a href="contact.html" >
+          <button class="mr-5 cursor-pointer" id="hover1">Contact us</button>
         </a></div>
 
 <div style="height: 400px;background-image: url(/images/visa.jpg);background-repeat: no-repeat;background-size: cover;background-position: center;" >
@@ -189,8 +201,9 @@ position: absolute;top: 80%;">Visa Councelling</h1>
 </div>
    
 
-<div id="aboutz">
-<div id="pad" style="width: 60%;">
+<div  style="background-image: url(images/pic6.jpg);background-size: cover;background-position: center;">
+  <div id="aboutz"  style="background-color:#001f3fe1;color: white;;">
+<div id="pad" style="width: 60%;font-weight: bold;">
    <h2>Fill in the form to apply</h2>
 <form action="">
 <label for="">Full Name</label><br>
@@ -228,12 +241,24 @@ position: absolute;top: 80%;">Visa Councelling</h1>
 </form>
 </div>  
 
-<div style="display: flex;flex-direction: column;width: 40%;" >
-    <img src="images/pic1.jpeg" alt="pic11"><br>
-    <img src="images/pic25.jpeg" alt="pic11"><br>
-    <img src="images/pic3.jpeg" alt="pic11"><br>
-
+<div style="display: flex;flex-direction: column;width: 40%;color: white;" >
+  <div style="background-color:  rgb(14, 71, 128);padding-bottom: 20px;">
+   <h1 style="background-color: #0e3861;font-size: 25px;font-weight: bolder;padding: 10px;">Navigation/Links</h1>
+   <ol>
+    <li><a href="">Test of English Comparison</a></li> 
+    <li><a href="flight-ticket.html">Flight Ticket</a></li> 
+    <li><a href="">Referral Agent</a></li> 
+    <li><a href="">Live Chat</a></li> 
+   </ol>
+  </div>
+  <div></div><br><br>
+ <div>
+   <h1 style="background-color: #001f3f;font-size: 25px;font-weight: bolder;padding: 10px;">Test of English Comparison</h1>
+   <img src="images/english.jpg" alt="">
+ </div>  
+ 
 </div>
+
 </div>
 
 
@@ -253,21 +278,20 @@ position: absolute;top: 80%;">Visa Councelling</h1>
 
 
 <hr>
-    <footer class="text-gray-600 body-font " style="background-color:#001f3f;">
-        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-          <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-           <img src="images/Logo.jpeg" alt="logo" width="60px">
-            <span class="ml-3 text-xl text-[#ffffff]">WanderPassage Travels and Tours</span> 
-          </a>
-          <p class="text-sm text-[#ffffff] sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
-            Copyright © 2023. All Rights Reserved 
-            <span style="border-right: 2px solid white; height: 70px;margin-right: 10px;"></span>
-            <a class="text-#ffffff ml-1" rel="noopener noreferrer" target="_blank"></a> 
-            Developed by Inspired-dev tech solutions
-          </p>
-          
-        </div>
-      </footer>
+<footer class="text-gray-600 body-font " style="background-color:#001f3f;">
+  <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+    <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+     <img src="images/Logo.jpeg" alt="logo" width="60px">
+      <span class="ml-3 text-xl text-[#ffffff]">WanderPassage Travels</span> 
+    </a>
+    <p class="text-sm text-[#ffffff] sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
+      Copyright © 2023. All Rights Reserved 
+    
+      
+    </p>
+    
+  </div>
+</footer>
 
       <div style="position: fixed;top: 40%;left:5%;">
         <span class=" sm:ml-auto sm:mt-0 mt-4 ">

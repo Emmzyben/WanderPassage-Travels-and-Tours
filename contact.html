@@ -11,7 +11,9 @@
 .nav-container {
   position: relative;
   display: inline-block;
+  padding-right: 30px;
 }
+
 
 #dropdown {
   display: none;
@@ -78,17 +80,21 @@
    </style>
 </head>
 <body>
+  <div id="firstUp">
+    <div><p>+2348062403898  <span id="sp"> info@wanderpassagetravels.com </span></p></div>
+    <div style="text-align: right;"><a href="applicaton.html">| Application form-apply@wanderpassagetravels.com |</a></div>
+  </div>
     <header class="text-gray-600 body-font w-full z-50" id="head">
         <div class="title-font font-medium text-gray-900" id="custom-container" style="height: 90px;">
+          <div id="custom-container2">
           <div style="text-align: left;">
             <img src="images/Logo.jpeg" width="90px" style="margin-left: 4%;" />
-            <p class="text-[#001f3f] cursor-pointer" style="font-size: 14px; padding-left: 20px;"> <i>Travel Beyond, Discover Within</i></p>
+            <p class="text-[#001f3f] cursor-pointer" style="font-size: 14px; padding-left: 20px;"> <i><b>Travel Beyond, Discover Within</b></i></p>
           <br> 
           </div>
+      </div>
       
-          <div id="upul">
-            <p class="text-gray-900 font-bold cursor-pointer">Email:info@wanderpassagetravels.com</p>
-            <p class="text-gray-900 font-bold cursor-pointer">Tel1: +234 (0) 800-000-0000<br/> Tel2: +234 (0) 700-000-0000</p>
+           <div id="upul">
           </div>
         </div>
       
@@ -158,13 +164,19 @@
       <!-- nav -->
 
     
-      <div id="navbars"> 
-        <a class="mr-5 cursor-pointer" id="hover" href="index.html">Home</a>
+     <div id="navbars"> <a class="mr-5 cursor-pointer" id="hover" href="index.html">Home</a>
         <a class="mr-5 cursor-pointer" id="hover" href="applicaton.html">Application Form</a>
        
        
-        <a class="mr-5 cursor-pointer" id="hover" href="about.html">About us</a>
-        <a class="mr-5 cursor-pointer" id="hover" href="services.html">Services</a>
+         
+        <div class="nav-container">
+          <a class="mr-5 cursor-pointer" id="hoverer" onmouseenter="openDropdown()" onmouseleave="closeDropdown()">About Us</a>
+          <ul id="dropdown">
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="offices.html">Offices</a>
+          </ul>
+        </div>
        
         <div class="nav-container">
             <a class="mr-5 cursor-pointer" id="hoverer" onmouseenter="openDropdown()" onmouseleave="closeDropdown()">Institutions</a>
@@ -178,10 +190,10 @@
             </ul>
           </div>
        
-          <a class="mr-5 cursor-pointer" id="hover" href="visa.html">Visa Councelling</a>
+          <a class="mr-5 cursor-pointer" id="hover" href="visa.html">Visa Counselling</a>
         <a class="mr-5 cursor-pointer" id="hover" href="flight-ticket.html">Flight ticket</a>
-        <a href="contact.html">
-         <button class="mr-5 cursor-pointer" id="hover1">Contact us</button>
+        <a href="contact.html" >
+          <button class="mr-5 cursor-pointer" id="hover1">Contact us</button>
         </a></div>
 
 <div style="height: 400px;background-image: url(/images/student.jpg);background-repeat: no-repeat;background-size: cover;background-position: center;" >
@@ -191,11 +203,12 @@ position: absolute;top: 80%;">Contact Us</h1>
 </div>
 </div>
 
+<div  style="background-image: url(images/students.jpg);background-size: cover;background-position: center;">
 
-<section class="py-6 dark:bg-white dark:text-[#001233]">
+<section class="py-6 dark:bg-[#001f3fe1] dark:text-[white]">
     <div class="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
         <div class="py-6 md:py-0 md:px-6">
-            <h1 class="text-4xl font-bold" style="color:white;background-color: #001f3f;
+            <h1 class="text-4xl font-bold" style="color:#001f3f;background-color:#FFD700;
             width: 250px;padding: 10px;border-radius: 8px;">Get in touch</h1>
             <p class="pt-2 pb-4">Fill in the form to start a conversation</p>
             <div class="space-y-4">
@@ -203,19 +216,13 @@ position: absolute;top: 80%;">Contact Us</h1>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 mr-2 sm:mr-6">
                         <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
                     </svg>
-                    <span>Banex plaza, Wuse 2 Abuja</span>
+                    <span> Suit BPS 10 2nd Floor, Old Banex Plaza, Aminu Kanu Crescent, Wuse 2 Abuja</span>
                 </p>
                 <p class="flex items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 mr-2 sm:mr-6">
                         <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
                     </svg>
-                    <span>+234 (0) 700-000-0000</span>
-                </p>
-                <p class="flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 mr-2 sm:mr-6">
-                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
-                    </svg>
-                    <span>+234 (0) 700-000-0000</span>
+                    <span>+234 (0) 806 240 3898</span>
                 </p>
                 <p class="flex items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 mr-2 sm:mr-6">
@@ -226,7 +233,7 @@ position: absolute;top: 80%;">Contact Us</h1>
                 </p>
             </div>
         </div>
-        <form novalidate class="flex flex-col py-8 space-y-6 md:py-0 md:px-6" style="margin-top: 20px; border: 1px solid rgb(40, 3, 40); padding: 20px; border-radius: 8px;">
+        <form novalidate class="flex flex-col py-8 space-y-6 md:py-0 md:px-6" style="margin-top: 20px; border: 1px solid rgb(255, 255, 255); padding: 20px; border-radius: 8px;">
           <label class="block">
               <span class="mb-1">Full name</span>
               <input type="text" id="fullName" class="block w-full rounded-md shadow-sm focus:ring focus:ri focus:ri" style="border: 1px solid #001233;" />
@@ -243,7 +250,7 @@ position: absolute;top: 80%;">Contact Us</h1>
               <span class="mb-1">Message</span>
               <textarea id="message" rows="3" class="block w-full rounded-md focus:ring focus:ri focus:ri" style="border: 1px solid #001233;"></textarea>
           </label>
-          <button type="button" id="submitBtn" class="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ri dark:bg-[#001f3f] dark:text-[white] focus:ri hover:ri">Submit</button>
+          <button type="button" id="submitBtn" class="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ri dark:bg-[#FFD700] dark:text-[#001f3f] focus:ri hover:bg-[#d8bb14]">Submit</button>
       </form>
       <script>
         document.getElementById('submitBtn').addEventListener('click', function() {
@@ -262,7 +269,7 @@ position: absolute;top: 80%;">Contact Us</h1>
           
     </div>
 </section>
-
+</div>
 
 <div id="flag-container">
     <div class="flag-container-inner"></div>
@@ -270,21 +277,20 @@ position: absolute;top: 80%;">Contact Us</h1>
   
  
   <hr>
-      <footer class="text-gray-600 body-font " style="background-color:#001f3f;">
-          <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-             <img src="images/Logo.jpeg" alt="logo" width="60px">
-              <span class="ml-3 text-xl text-[#ffffff]">WanderPassage Travels and Tours</span> 
-            </a>
-            <p class="text-sm text-[#ffffff] sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
-              Copyright © 2023. All Rights Reserved 
-              <span style="border-right: 2px solid white; height: 70px;margin-right: 10px;"></span>
-              <a class="text-#ffffff ml-1" rel="noopener noreferrer" target="_blank"></a> 
-              Developed by Inspired-dev tech solutions
-            </p>
-            
-          </div>
-        </footer>
+  <footer class="text-gray-600 body-font " style="background-color:#001f3f;">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+       <img src="images/Logo.jpeg" alt="logo" width="60px">
+        <span class="ml-3 text-xl text-[#ffffff]">WanderPassage Travels</span> 
+      </a>
+      <p class="text-sm text-[#ffffff] sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
+        Copyright © 2023. All Rights Reserved 
+      
+        
+      </p>
+      
+    </div>
+  </footer>
   
         <div style="position: fixed;top: 40%;left:5%;">
             <span class=" sm:ml-auto sm:mt-0 mt-4 ">
