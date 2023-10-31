@@ -33,7 +33,21 @@
     border-radius: 2px;
   }
   #custom-container2 {
-    background-color: #001f3f80;
+    background-color: #001f3fd5;
+     }
+     #custom-container3{
+      display: flex;
+      flex-direction: row;
+     }
+     #custom-container3 > div{
+      color: white;
+     }
+     #h1{
+      font-size: 30px;
+      font-weight: bolder;
+     }
+     #p{
+      font-size: small;
      }
   #upul{
     position: absolute;
