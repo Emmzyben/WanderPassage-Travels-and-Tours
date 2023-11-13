@@ -233,6 +233,72 @@ position: absolute;top: 80%;">Uk & Europe</h1>
 <div  style="background-image: url(images/pic6.jpg);background-size: cover;background-position: center;">
   <div id="aboutz"  style="background-color:#001f3fe1;color: white;;">
 <div id="pad" style="font-weight: bold;">
+  <div id="advert" class="advert-container">
+    <div id="underAd">
+      <h1 style="font-weight: 800;">Visa Counseling</h1>
+      <br>
+      <a href="visa.html">Apply now</a>
+    </div>
+    <div class="advert-buttons">
+      <button onclick="prevSlide(0)" id="buttonz"><</button>
+      <button onclick="nextSlide(0)" style="float: right;" id="buttonz">></button>
+    </div>
+  </div>
+  
+  <div id="advert1" class="advert-container">
+    <div id="underAd">
+      <h1 style="font-weight: 800;">Study Abroad with ease</h1>
+      <br>
+      <a href="application.html">Apply now</a>
+    </div>
+    <div class="advert-buttons">
+      <button onclick="prevSlide(1)" id="buttonz"><</button>
+      <button onclick="nextSlide(1)" id="buttonz" style="float: right;">></button>
+    </div>
+  </div>
+  
+  <div id="advert2" class="advert-container">
+    <div id="underAd">
+      <h1 style="font-weight: 800;">Work while you study</h1>
+      <br>
+      <a href="application.html">Apply now</a>
+    </div>
+    <div class="advert-buttons">
+      <button onclick="prevSlide(2)" id="buttonz"><</button>
+      <button onclick="nextSlide(2)" id="buttonz" style="float: right;">></button>
+    </div>
+  </div>
+
+  <script>
+    let currentSlide = 0;
+const slides = document.querySelectorAll('.advert-container');
+
+function showSlide(index) {
+slides.forEach((slide, i) => {
+  if (i === index) {
+    slide.style.display = 'block';
+  } else {
+    slide.style.display = 'none';
+  }
+});
+}
+
+function nextSlide() {
+currentSlide = (currentSlide + 1) % slides.length;
+showSlide(currentSlide);
+}
+
+function prevSlide() {
+currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+showSlide(currentSlide);
+}
+
+// Initial display
+showSlide(currentSlide);
+
+// Automatic slideshow every 3 seconds
+setInterval(nextSlide, 4000);
+  </script>
      <h2>WANDERPASSAGE TRAVELS PARTNER INSTITUTIONS IN UK & EUROPE</h2>
     <p>UNIVERSITY OF SUNDERLAND, SUNDERLAND CAMPUS, UK.</p>
     <p>UNIVERSITY OF SUNDERLAND, LONDON CAMPUS, UK.</p>
@@ -393,7 +459,38 @@ position: absolute;top: 80%;">Uk & Europe</h1>
 			</div>
 		</div>
 	</div>
-	<div class="py-6 text-sm text-center dark:text-[white]">©2023 WanderPassage Travels. All rights reserved.</div>
+		<div class="py-6 text-sm  dark:text-[white] container flex flex-row justify-between" style="flex-wrap: wrap;">
+   <div style="width: 50%;">©2023 WanderPassage Travels. All rights reserved.</div> 
+   <div style="width: 50%;">
+    <div >
+      <span class=" sm:ml-auto sm:mt-0 mt-4 " style="display: flex;flex-direction: row;">
+    <a class="text-gray-500" href="https://www.facebook.com/profile.php?id=61552195325006" style="background-color: white;padding: 5px;">
+      <svg fill="#001f3f" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+      </svg>
+    </a><br>
+    <a class="ml-3 text-gray-500" href="https://twitter.com/VICTORALICHE1" style="background-color: white;padding: 5px;">
+      <svg fill="#001f3f" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+      </svg>
+    </a><br>
+    <a class="ml-3 text-gray-500" href="https://www.instagram.com/wanderpassage_travels/#" style="background-color: white;padding: 5px;">
+      <svg fill="#001f3f" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+      </svg>
+    </a><br>
+    <a class="ml-3 text-gray-500" href="https://www.linkedin.com/in/victor-aliche-423038238/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BYSaV3Pt3SoqSdLiD87Z9Ew%3D%3D" style="background-color: white;padding: 5px;">
+      <svg fill="#001f3f" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+        <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+        <circle cx="4" cy="4" r="2" stroke="none"></circle>
+      </svg>
+    </a>
+    <a href="applicaton.html" style="margin-left: 3%;">| Application form-apply@wanderpassagetravels.com |</a>
+  </span>
+    </div> 
+  </div>
+  </div>
 </footer>
 
 <div style="position: fixed;top: 40%;left:1%;">

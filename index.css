@@ -603,17 +603,17 @@ ol > li{
   transition: font-size 2s;
 }
 #height{
- margin-top: -30%;
+ margin-top: -60%;
 }
 #height2{
-  margin-top: -1250px;
+  margin-top: -1550px;
  }
 ol > li:hover{
   font-size: large;
   color: #FFD700;
 }
 #height3{
-  margin-top: -800px;
+  margin-top: -950px;
  }
  #droping{
   background-color: whitesmoke;
@@ -655,4 +655,70 @@ ol > li:hover{
     }
     #ulz li{
     color: white;
+    }
+    #advert{
+      height: 300px;
+     background-image: url(images/counselling.jpg);
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     margin-bottom: 7%;
+     padding-top: 15%;
+    }
+    #underAd{
+      background-color: rgba(0, 0, 0, 0.621);
+      height: 120px;
+      width: 250px;
+      text-align: center;
+      margin-left: 29%;
+      padding: 10px;
+      font-size: large;
+    }
+
+    #advert> #underAd >a{
+      border: 2px solid white;
+      font-weight: 600;
+      padding: 5px;
+    }
+    #advert1{
+      height: 300px;
+     background-image: url(images/indiana6.png);
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     margin-bottom: 7%;
+     padding-top: 15%;
+    }
+    #advert1> #underAd >a{
+      border: 2px solid white;
+      font-weight: 600;
+      padding: 5px;
+    }
+    #advert2{
+      height: 300px;
+     background-image: url(images/indiana11.png);
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     margin-bottom: 7%;
+     padding-top: 15%;
+    }
+    #advert2> #underAd >a{
+      border: 2px solid white;
+      font-weight: 600;
+      padding: 5px;
+    }
+
+    .advert-container {
+      display: none;
+    }
+    .advert-buttons {
+     margin-top: -20%;
+    }
+    #buttonz{
+      padding: 2px;
+      color: black;
+      font-size: 40px;
+      font-weight: bolder;
+      background-color: rgba(255, 255, 255, 0.619);
     }
