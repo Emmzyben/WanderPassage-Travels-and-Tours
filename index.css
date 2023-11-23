@@ -731,6 +731,15 @@ width: 100%;
   #upz>h1{
     padding-top: 76%;
   }
+  #upSocial{
+    background-color: #001f3fa0;
+    display: flex;
+    flex-direction: row;
+  }
+  #upSocial > div{
+    padding: 7px;
+    width: 25%;
+  }
 }
 #sp{
   padding-left: 40px;
