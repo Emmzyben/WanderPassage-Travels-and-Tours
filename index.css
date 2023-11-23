@@ -693,10 +693,11 @@ width: 100%;
   }
   #aboutz{
     flex-direction: column;
-    padding: 15px;
+    padding:0;
   }
     #aboutz > div{
-      padding: 0;
+      padding: 20px;
+      margin: 5px;
     }
   #pad ,#pad2{
     width: 100%;
