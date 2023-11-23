@@ -778,8 +778,13 @@ ol > li:hover{
       font-size: 50px;
     }
     @media screen and (max-width: 800px) {
+      #underunder >div> a >img{
+        width: 300px;
+        height: 250px;
+        margin-left: 30px;
+        }
       #letter{
-        font-size: 30px;
+        font-size: 50px;
       }
       #height,#heightt,#height2,#height3,#height4,#height5{
         margin-top: 0;
@@ -787,6 +792,7 @@ ol > li:hover{
        }
       #underunder{
         flex-direction: column;
+        text-align: center;
        }
        #underunder > div{
        width: 100%;
