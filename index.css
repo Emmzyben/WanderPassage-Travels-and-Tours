@@ -684,6 +684,7 @@ width: 100%;
 #upz>h1{
   padding-top: 25%;
 }
+
 @media screen and (max-width:800px) {
   #upz{
     font-size: 40px;
