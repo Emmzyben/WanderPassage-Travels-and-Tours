@@ -718,7 +718,7 @@ width: 100%;
     padding-top: 76%;
   }
   body{
-    
+    overflow-x: hidden;
   }
 }
 #sp{
