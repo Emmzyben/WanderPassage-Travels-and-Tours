@@ -19,7 +19,7 @@
 }
 #ul{
   background-color: rgb(255, 255, 255);
-   text-align: center;padding: 5px;
+   text-align: center;
    font-weight: bolder;
    display: none;
 }
@@ -392,7 +392,7 @@ border-bottom: 1px solid wheat;
 #ul {
     list-style-type: none;
     margin: 0;
-    padding: 10px;
+    padding: 0;
 }
 
 
@@ -684,8 +684,22 @@ width: 100%;
 #upz>h1{
   padding-top: 25%;
 }
-
+#upSocial{
+  background-color: #001f3fa0;
+  display: flex;
+  flex-direction: row;
+}
+#upSocial > div{
+  padding: 7px;
+  width: 30%;
+}
+#noner{
+  display: none;
+}
 @media screen and (max-width:800px) {
+  #noner{
+    display: block;
+  }
   #upz{
     font-size: 40px;
     background-color: #001f3f56;
@@ -716,9 +730,6 @@ width: 100%;
   }
   #upz>h1{
     padding-top: 76%;
-  }
-  body{
-    overflow-x: hidden;
   }
 }
 #sp{
