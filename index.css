@@ -1,5 +1,7 @@
 /* styles/reset.css */
-
+.sub-menu1,.sub-menu2 {
+  display: none;
+}
 .span{
     font-size:30px;cursor:pointer;
 }

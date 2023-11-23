@@ -116,22 +116,31 @@
                <li><a href="offices.html">OFFICES</a></li> 
               </ul>
             </li>
-            <li class="dropdown-item">
-                INSTITUTIONS
-                <ul class="sub-menu">
-                 <li><a href="Australia.html">AUSTRALIA</a></li> 
-                 <li><a href="Canada.html">CANADA</a></li>  
-                 <li><a href="Europe.html">UK & EUROPE</a></li>  
-                 <li><a href="SouthAmerica.html">SOUTH AMERICA</a></li> 
-                 <li><a href="usa.html">UNITED STATES OF AMERICA</a></li>  
-                 <li><a href="uae.html">UNITED ARAB EMIRATES</a></li>  
-                 <li> <a href="newZealand.html">NEW ZEALAND</a> </li>  
+            
+        
+              <li class="dropdown-item" onclick="toggleDropdown()">
+              INSTITUTIONS 
+                <ul class="sub-menu1">
+                  <li><a href="Australia.html">AUSTRALIA</a></li>
+                  <li><a href="Canada.html">CANADA</a></li>
+                  <li><a href="Europe.html">UK & EUROPE</a></li>
+                  <li><a href="SouthAmerica.html">SOUTH AMERICA</a></li>
+                  <li><a href="usa.html">UNITED STATES OF AMERICA</a></li>
+                  <li><a href="uae.html">UNITED ARAB EMIRATES</a></li>
+                  <li><a href="newZealand.html">NEW ZEALAND</a></li>
                 </ul>
               </li>
-              
-              <li class="dropdown-item">
+           
+              <script>
+                function toggleDropdown() {
+                  const subMenu = document.querySelector('.sub-menu1');
+                  subMenu.style.display = (subMenu.style.display === 'none' || subMenu.style.display === '') ? 'block' : 'none';
+                }
+              </script>
+
+              <li class="dropdown-item" onclick="toggleDropdown2()">
                 VISA COUNSELLING
-                <ul class="sub-menu">
+                <ul class="sub-menu2">
                  <li><a href="Australia2.html">AUSTRALIA</a></li> 
                  <li><a href="Canada2.html">CANADA</a></li>  
                  <li><a href="Europe2.html">UK & EUROPE</a></li>  
@@ -145,6 +154,12 @@
                   <li><a href="malta.html">MALTA</a> </li> 
                 </ul>
               </li>
+              <script>
+                function toggleDropdown2() {
+                  const subMenu = document.querySelector('.sub-menu2');
+                  subMenu.style.display = (subMenu.style.display === 'none' || subMenu.style.display === '') ? 'block' : 'none';
+                }
+              </script>
             <script>
             function toggleSubMenu() {
               const subMenu = document.querySelector('.sub-menu');

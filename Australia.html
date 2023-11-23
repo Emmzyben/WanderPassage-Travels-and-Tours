@@ -105,36 +105,63 @@
      
               <span id="span" onclick="toggleMenu()">&#9776;</span>
         <div>
-          <ul id="ul" >
-            <li><a class="hover:text-[#fe5000] cursor-pointer text-[#001f3f]" href="index.html"><h1>HOME</h1></a></li>
-            <li><a class="hover:text-[#fe5000] cursor-pointer text-[#001f3f]" href="about.html"><h1>APPLICATION FORM</h1></a></li>
+          <ul id="ul" style="text-align: center;">
+            <li><a class="hover:text-[#fe5000] cursor-pointer text-[#001f3f]" href="index.html">HOME</a></li>
+            <li><a class="hover:text-[#fe5000] cursor-pointer text-[#001f3f]" href="applicaton.html">APPLICATION FORM</a></li>
             <li class="dropdown-item">
-              About us
+              ABOUT US
               <ul class="sub-menu">
-               <li><a href="scafolding.html">Our services</a></li> 
-                <li><a href="training.html">Offices</a></li>
-                <li><a href="training.html">Contact</a></li>
+               <li><a href="about.html">ABOUT</a></li> 
+               <li><a href="services.html">SERVICES</a></li> 
+               <li><a href="offices.html">OFFICES</a></li> 
               </ul>
             </li>
-            <li class="dropdown-item">
-                Institutions
-                <ul class="sub-menu">
-                 <li> <a href="scafolding.html">Australia</a></li>  
-                 <li><a href="training.html">Canada</a></li>   
-                 <li><a href="safehouse.html">Uk & Europe</a></li>   
-                  <li><a href="maintanance.html">South America</a></li>  
-                  <li><a href="renting.html">United States of America</a></li>  
-                <li><a href="renting.html">United Arab Emirates</a></li>    
+            
+        
+              <li class="dropdown-item" onclick="toggleDropdown()">
+              INSTITUTIONS 
+                <ul class="sub-menu1">
+                  <li><a href="Australia.html">AUSTRALIA</a></li>
+                  <li><a href="Canada.html">CANADA</a></li>
+                  <li><a href="Europe.html">UK & EUROPE</a></li>
+                  <li><a href="SouthAmerica.html">SOUTH AMERICA</a></li>
+                  <li><a href="usa.html">UNITED STATES OF AMERICA</a></li>
+                  <li><a href="uae.html">UNITED ARAB EMIRATES</a></li>
+                  <li><a href="newZealand.html">NEW ZEALAND</a></li>
                 </ul>
               </li>
-              <li class="dropdown-item">
-                Portal Login
-                <ul class="sub-menu">
-                   <li><a href="scafolding.html">Application Login Portal</a></li> 
-                 <li> <a href="training.html">Staff login portal</a></li>  
+           
+              <script>
+                function toggleDropdown() {
+                  const subMenu = document.querySelector('.sub-menu1');
+                  subMenu.style.display = (subMenu.style.display === 'none' || subMenu.style.display === '') ? 'block' : 'none';
+                }
+              </script>
+
+              <li class="dropdown-item" onclick="toggleDropdown2()">
+                VISA COUNSELLING
+                <ul class="sub-menu2">
+                 <li><a href="Australia2.html">AUSTRALIA</a></li> 
+                 <li><a href="Canada2.html">CANADA</a></li>  
+                 <li><a href="Europe2.html">UK & EUROPE</a></li>  
+                  <li><a href="SouthAmerica2.html">SOUTH AMERICA</a></li> 
+                  <li><a href="usa2.html">UNITED STATES OF AMERICA</a></li>  
+                  <li><a href="newZealand2.html">NEW ZEALAND</a></li>  
+                  <li><a href="ireland.html">IRELAND</a></li> 
+                  <li><a href="malaysia.html">MALAYSIA</a></li>   
+                  <li><a href="Russia.html">RUSSIA</a></li>  
+                  <li><a href="Netherlands.html">NETHERLANDS</a></li> 
+                  <li><a href="malta.html">MALTA</a> </li> 
                 </ul>
               </li>
-            <script>function toggleSubMenu() {
+              <script>
+                function toggleDropdown2() {
+                  const subMenu = document.querySelector('.sub-menu2');
+                  subMenu.style.display = (subMenu.style.display === 'none' || subMenu.style.display === '') ? 'block' : 'none';
+                }
+              </script>
+            <script>
+            function toggleSubMenu() {
               const subMenu = document.querySelector('.sub-menu');
               subMenu.classList.toggle('open');
             }
@@ -150,8 +177,8 @@
               link.addEventListener('click', handleSubMenuItemClick);
             });
             </script>
-             <li> <a class="mr-5 cursor-pointer" id="hover" href="gallery.php">Visa Councelling</a></li>  
-             <li><a class="mr-5 cursor-pointer" id="hover" href="gallery.php">Flight ticket</a></li>   
+             <li> <a class="mr-5 cursor-pointer" id="hover" href="flight-ticket.html">FLIGHT TICKET</a></li>  
+             <li><a class="mr-5 cursor-pointer" id="hover" href="contact.html">CONTACT US</a></li>   
           
             
         </ul>
