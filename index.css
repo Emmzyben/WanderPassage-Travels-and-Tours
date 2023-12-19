@@ -923,7 +923,14 @@ ol > li:hover{
       width: 24%;
   
     }
+    #empower{
+      font-size: 30px;
+      font-weight: bolder;
+    }
     @media screen and (max-width:800px) {
+      #empower{
+        font-size: 25px;
+      }
       #correctfoot{
         display: flex;
         flex-direction: column;
