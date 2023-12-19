@@ -921,6 +921,7 @@ ol > li:hover{
 
     #correctfoot>div{
       width: 24%;
+  
     }
     @media screen and (max-width:800px) {
       #correctfoot{
