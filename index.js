@@ -3,25 +3,37 @@ const countryFlags = ['images/usa.jpg', 'images/uk.jpg', 'images/uae.png', 'imag
 const flagContainerInner = document.querySelector('.flag-container-inner');
 
 function createFlagElement(flagPath) {
-    const flagElement = document.createElement('img');
-    flagElement.src = flagPath;
-    flagElement.classList.add('flag');
-    return flagElement;
+  const flagElement = document.createElement('img');
+  flagElement.src = flagPath;
+  flagElement.classList.add('flag');
+  return flagElement;
 }
 
 // Duplicate the images to ensure seamless rolling effect
 const duplicatedFlags = [...countryFlags, ...countryFlags];
 
 duplicatedFlags.forEach(flagPath => {
-    const flagElement = createFlagElement(flagPath);
-    flagContainerInner.appendChild(flagElement);
+  const flagElement = createFlagElement(flagPath);
+  flagContainerInner.appendChild(flagElement);
 });
 
+let currentPosition = 0;
+const increment = 0.1; // Adjust the increment value for the desired speed
+
 function rollFlags() {
-    flagContainerInner.style.animation = `roll ${duplicatedFlags.length * 2}s linear infinite`; // Set the animation duration based on the number of duplicated flags
+  currentPosition -= increment;
+  flagContainerInner.style.transform = `translateX(${currentPosition}%)`;
+
+  if (currentPosition <= -100) {
+    currentPosition = 0;
+  }
+
+  requestAnimationFrame(rollFlags);
 }
 
+// Start the animation loop
 rollFlags();
+  
 
 
 

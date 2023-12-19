@@ -603,7 +603,6 @@ width: 100%;
 .flag-container-inner {
   display: inline-block;
   white-space: nowrap;
-  animation: roll 12s linear infinite;
   padding: 30px;
 }
 
@@ -616,14 +615,7 @@ width: 100%;
 #flagger{
   background-color: #001f3fcd;
 }
-@keyframes roll {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-300%);
-  }
-}
+
 
 #aboutz{
 display: flex;
@@ -919,7 +911,30 @@ ol > li:hover{
       justify-content: space-between;
 
     }
+    #correctfoot{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    #correctfoot>div{
+      width: 24%;
+    }
     @media screen and (max-width:800px) {
+      #correctfoot{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+  
+      #correctfoot>div{
+        width: auto;
+        margin: 20px;
+      }
       #underAd{
        width: auto;
        margin: 0;
