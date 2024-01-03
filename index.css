@@ -697,7 +697,7 @@ width: 100%;
     background-color: #001f3f56;
   }
   #upz>h1{
-    padding-top: 55%;
+    padding-top: 50%;
   }
   #firstup{
     display: none;
@@ -815,7 +815,7 @@ ol > li:hover{
         height: 250px;
         }
       #letter{
-        font-size: 50px;
+        font-size: 33px;
       }
       #height,#heightt,#height2,#height3,#height4,#height5{
         margin-top: 0;
