@@ -1,4 +1,12 @@
 /* styles/reset.css */
+body{
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
 .sub-menu1,.sub-menu2 {
   display: none;
 }
@@ -66,13 +74,15 @@
   text-align: center;
   z-index: 1000;
   font-weight: bold;
+  padding: 5px;
+  margin-top: -5px;
 }
 footer{
     background-color: #01172c;
 }
 #hover{
   margin-right: 30px;
-  padding: 10px;
+  padding: 7px;
 }
 #hover1{
   padding: 10px;
@@ -506,34 +516,43 @@ margin-right: 40px;
  }
 
  .services{
-  display: flex;flex-direction: row;flex-wrap: wrap;align-items: center;justify-content: space-around;
-  font-size: larger;
+  display: flex;flex-direction: row;flex-wrap: wrap;justify-content: space-around;
   font-weight: bolder;
-  padding: 20px;
+  
  }
  .services > div{
   width: 20%;
+  margin: 10px;
   text-align: center;
-  margin: 20px;
   color: #ffffff;
  }
  .services >div> img{
-width:300px;
+width:100%;
 height: 200px;
 border-radius: 10px;
  }
+ .services >div> h1{
+  font-size: 20px;
+   }
+   #rounded{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
+   }
+   #rounded>div{
+    margin: 20px;
+   }
 @media screen and (max-width:800px) {
   .servicez{
-  display: flex;flex-direction: column;flex-wrap: wrap;justify-content: center;
-  font-size: larger;
+  display: flex;flex-direction: column;justify-content: center;
   font-weight: bolder;
   padding: 20px;
  }
  .servicez > div{
-  width: 100%;
+  width: auto;
   text-align: center;
   color: #ffffff;
-
   margin-bottom: 40px;
  }
  .servicez >div> img{
@@ -541,11 +560,12 @@ height: 250px;
 border-radius: 10px;
 width: 100%;
  }
- #round{
-  border-radius: 100%;
+ #round1{
+  width: auto;
+  border-radius: 100px;
   border: 1px solid white;
   font-size:14px;
-  padding: 40px;
+  padding: 20px;
   text-align: center;
   background-color: #D1DBE5;
   color: rgb(0, 0, 0);
@@ -562,6 +582,7 @@ width: 100%;
   align-items: center;
   color: #003F88;
   margin-top: 1%;
+  padding: 20px;
  }
  #introdiv > div{
   width: 50%;
@@ -624,8 +645,8 @@ display: flex;
 flex-direction: row;
 align-items: center;
 justify-content: space-around;
-padding: 30px;
-width: 100%;
+padding: 10px;
+width: auto;
 }
 #aboutz > div{
   margin-right: 20px;
@@ -636,13 +657,13 @@ width: 100%;
 }
 #aboutz >div> h1{
   color:#FFD700;
-  font-size: larger;
-  font-weight: bolder;
+  font-size: large;
+  font-weight: bold;
 }
 #aboutz >div> h2{
   color:#001f3f;
-  font-size: larger;
-  font-weight: bolder;
+  font-size: large;
+  font-weight: bold;
   background-color:#FFD700;
   padding: 10px;
 }
@@ -650,11 +671,13 @@ width: 100%;
   padding: 10px;
 }
 #pad{
-  margin-left: 7%;
-  width: 60%;
+  width: 58%;
 }
 #pad2{
-  width: 40%;
+  width: 38%;
+}
+#pad2>div>img{
+  width: 100%;
 }
 
 
@@ -670,36 +693,36 @@ width: 100%;
   width: 45%;
 }
 #upz{
-  font-size: 50px;
+  font-size: 20px;
   background-color: #001f3f56;height: 400px;
   width: 100%;
 
 }
 #upz>h1{
-  padding-top: 25%;
+  padding-top: 20%;
 }
-#upSocial{
-  background-color: #001f3fa0;
-  display: flex;
-  flex-direction: row;
-}
-#upSocial > div{
-  padding: 7px;
-  width: 30%;
-}
+
+
 #noner{
   display: none;
 }
+
+#showup{
+  margin-top: -40px;
+}
 @media screen and (max-width:800px) {
+  #showup{
+    margin-top: -20px;
+  }
   #noner{
     display: block;
   }
   #upz{
-    font-size: 40px;
+    font-size: 16px;
     background-color: #001f3f56;
   }
   #upz>h1{
-    padding-top: 50%;
+    padding-top: 40%;
   }
   #firstup{
     display: none;
@@ -709,17 +732,17 @@ width: 100%;
     padding:0;
   }
     #aboutz > div{
-      padding: 20px;
-      margin: 5px;
+      padding: 10px;
+      margin: 0;
     }
   #pad ,#pad2{
-    width: 100%;
+    width: 90%;
   }
 }
 
 @media screen and (max-width:400px) {
   #upz{
-    font-size: 40px;
+    font-size: 30px;
     background-color: #001f3f56;
   }
   #upz>h1{
@@ -748,26 +771,44 @@ ol > li{
  margin-top: -30%;
  width: 40%;
 }
+#height>div>img{
+  width: 100%;
+}
 #heightt{
   margin-top: -60%;
  width: 40%;
 }
+#heightt>div>img{
+  width: 100%;
+}
 #height2{
   margin-top: -1700px;
+ }
+ #height2>div>img{
+width: 100%;
  }
  #height4{
   margin-top: -130%;
  }
+ #height4>div>img{
+  width: 100%;
+   }
  #height5{
-  margin-top: -1600px;
+  margin-top: -1900px;
  }
+ #height5>div>img{
+  width: 100%;
+   }
 ol > li:hover{
   font-size: large;
   color: #FFD700;
 }
 #height3{
-  margin-top: -950px;
+  margin-top: -1200px;
  }
+ #height3>div>img{
+  width: 100%;
+   }
  #droping{
   background-color: whitesmoke;
   color: black;
@@ -857,9 +898,11 @@ ol > li:hover{
       text-align: center;
       margin-left: 29%;
       padding: 10px;
-      font-size: large;
     }
 
+    #underAd>h1{
+      font-size: 20px;
+    }
     #advert> #underAd >a{
       border: 2px solid white;
       font-weight: 600;
@@ -955,4 +998,67 @@ ol > li:hover{
       #application{
         display: none;
       }
+    }
+
+    #footrow{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+
+    }
+    #footrow>div>h3{
+      color: #FFD700;
+    }
+
+
+    #contact{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      background-color:#001f3f;
+      color: white;
+  }
+  #contact>div{
+      width: 45%;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding: 20px;
+  }
+  #contact>div>form>input{
+      padding: 10px;
+      border-radius: 5px;
+      width: 100%;
+      border: 1px solid #fff;
+  }
+  #contact>div>form>textarea{
+      width: 100%;
+      border: 1px solid #fff;
+  }
+  #contact>div>form>button{
+  background-color:#FFD700;
+  padding: 10px;
+  color:#001f3f;
+  margin-top: 10px;
+  width: 100px;
+  border: 0px solid #a6a6e1;
+  border-radius: 7px;
+  font-size: 19px;
+  font-weight: bold;
+  }
+  #contact>div>form{
+      border: 1px solid #fff;
+      border-radius: 7px;
+    padding: 20px;
+  }
+    @media screen and (max-width:800px) {
+      #footrow{
+     flex-direction: column;
+  margin: 20px;
+      }
+      #contact{
+        flex-direction: column;
+    }
+    #contact>div{
+        width: auto;
+    }
     }
