@@ -1009,7 +1009,6 @@ ol > li:hover{
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-
     }
     #footrow>div>h3{
       color: #FFD700;
