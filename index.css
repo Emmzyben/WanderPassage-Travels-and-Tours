@@ -101,8 +101,12 @@ color: #001f3f;
   
   @media screen and (max-width: 800px) {
     #h1{
-      font-size: 18px;
+      font-size: 17px;
       font-weight: bolder;
+      padding-left: 20px;
+     }
+     #p{
+      padding-left: 20px;
      }
     #custom-container {
       display: block;
