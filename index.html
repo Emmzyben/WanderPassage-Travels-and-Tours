@@ -51,6 +51,29 @@
   display: block;
 }
 
+#footrow1{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    #footrow1>div{
+      width: 32%;
+      border: 1px solid white;
+    }
+    #footrow1>div>h3{
+      color: #FFD700;
+    }
+    @media screen and (max-width:800px) {
+      #footrow1{
+      display: flex;
+      flex-direction:column;
+      justify-content: start;
+    }
+    #footrow1>div{
+      width: 100%;
+      border: 1px solid white;
+    }
+    }
    </style>
 </head>
 <body>
@@ -433,15 +456,15 @@ top: 0;z-index: 1;">
     
 
 <hr>
-<div id="footrow" style="padding-bottom: 30px;text-align: center;">
- <div style="padding: 10px;">©2023 WanderPassage Travels. All rights reserved.</div> 
- <div style="padding: 10px;">
+<div id="footrow1" style="padding-bottom: 30px;text-align: center;">
+ <div>©2023 WanderPassage Travels. All rights reserved.</div> 
+ <div>
   <a href="https://www.facebook.com/profile.php?id=61552195325006" style="margin-right: 10px;"><i class="fa fa-facebook-official" style="font-size:24px"></i> </a>
   <a  href="https://twitter.com/VICTORALICHE1" style="margin-right: 10px;"><i class="fa fa-twitter-square" style="font-size:24px"></i></a>
   <a  href="https://www.instagram.com/wanderpassage_travels/#" style="margin-right: 10px;"><i class="fa fa-instagram" style="font-size:24px"></i></a>
   <a  href="https://www.linkedin.com/in/victor-aliche-423038238/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BYSaV3Pt3SoqSdLiD87Z9Ew%3D%3D" ><i class="fa fa-linkedin-square" style="font-size:24px"></i></a>
 </div>
-<div style="padding: 10px;">
+<div>
 <a href="applicaton.html">| Application form-apply@wanderpassagetravels.com |</a>
 </div>
 </div>
