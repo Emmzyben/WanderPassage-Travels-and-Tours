@@ -51,6 +51,14 @@
   display: block;
 }
 
+#footz{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    #footz>div>h3{
+      color: #FFD700;
+    }
 #footrow1{
       display: flex;
       flex-direction: row;
@@ -75,9 +83,12 @@
       font-size: 14px;
       padding: 10px;
     }
-    #footrow{
-      display: none;
-    }
+   
+    #footz{
+     flex-direction: column;
+  margin: 20px;
+  display: none;
+      }
     }
    </style>
 </head>
@@ -474,7 +485,7 @@ top: 0;z-index: 1;">
 </div>
 </div>
 
-<div id="footrow" style="padding-bottom: 30px;" >
+<div id="footz" style="padding-bottom: 30px;" class="footz">
   <div style="margin: 10px;">©2023 WanderPassage Travels. All rights reserved.</div> 
   <div style="margin: 10px;">
    <a href="https://www.facebook.com/profile.php?id=61552195325006" style="margin-right: 10px;"><i class="fa fa-facebook-official" style="font-size:24px"></i> </a>
