@@ -718,7 +718,7 @@ width: auto;
 }
 @media screen and (max-width:800px) {
   #showup{
-    margin-top: -30px;
+    margin-top: -40px;
   }
   #noner{
     display: block;
