@@ -71,7 +71,33 @@
     #footrow1>div>h3{
       color: #FFD700;
     }
+    #logo{
+      display: flex;
+      flex-direction: row ;
+      margin-left: 30px;
+    }
+    #logo>div{
+      margin: 20px;
+    }
+    #logo>div>img{
+      width: 100px;
+    }
+
     @media screen and (max-width:800px) {
+      #logo{
+      display: flex;
+      flex-direction: row ;
+      margin-left: 10px;
+    }
+    #logo>div{
+      margin: 10px;
+    }
+    #logo>div>h2{
+      font-size: 17px;
+    }
+    #logo>div>img{
+      width: 70px;
+    }
       #footrow1{
       display: flex;
       flex-direction:column;
@@ -83,7 +109,7 @@
       font-size: 14px;
       padding: 10px;
     }
-   
+  
     #footz{
      flex-direction: column;
   margin: 20px;
@@ -436,11 +462,11 @@ top: 0;z-index: 1;">
 <div>
 <footer style="color: white;margin-bottom: -20px;">
 	
-  <div style="display: flex;flex-direction: row;">
-      <div style="margin: 20px;">
-      <img src="images/Logo.jpeg" alt="" width="100px">
+  <div id="logo">
+      <div >
+      <img src="images/Logo.jpeg" alt="" >
       </div>
-      <div style="margin: 20px;">
+      <div >
         <h2>WanderPassage Travels</h2>
       </div>
   </div>
