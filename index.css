@@ -1008,10 +1008,15 @@ ol > li:hover{
     #footrow{
       display: flex;
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: center;
+
     }
     #footrow>div>h3{
       color: #FFD700;
+    }
+    #footrow>div{
+      width: 32%;
+      margin: 20px;
     }
 
 
