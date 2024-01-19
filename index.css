@@ -717,6 +717,9 @@ width: auto;
   margin-top: -40px;
 }
 @media screen and (max-width:800px) {
+  #letter{
+    font-size: 18px;
+  }
   #showup{
     margin-top: -40px;
   }
