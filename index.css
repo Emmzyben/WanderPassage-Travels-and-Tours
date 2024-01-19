@@ -1059,6 +1059,9 @@ ol > li:hover{
      flex-direction: column;
   margin: 20px;
       }
+      #footrow>div{
+        width: auto;
+      }
       #contact{
         flex-direction: column;
     }
