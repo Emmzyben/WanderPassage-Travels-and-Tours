@@ -718,7 +718,7 @@ width: auto;
 }
 @media screen and (max-width:800px) {
   #letter{
-    font-size: 18px;
+    font-size: 25px;
   }
   #showup{
     margin-top: -40px;
